@@ -1,0 +1,16 @@
+[wget] What option lets wget save a download under a specified filename?	-O <filename>.
+[curl] What is curl primarily used for?	Transferring data to or from servers using URLs and multiple protocols.
+[curl] What does curl do with fetched content by default?	Writes it to standard output.
+[curl] What option makes curl follow HTTP redirects?	-L.
+[curl] What option saves curl output to a specified file?	-o <filename>.
+[curl] Which tool is generally better suited to mirroring an entire website: curl or wget?	wget.
+[SCP] What protocol does SCP use for secure file transfers?	SSH.
+[SCP] How do you specify a remote destination in SCP?	user@host:/path.
+[SFTP] What is SFTP?	An interactive file-transfer protocol that operates over SSH.
+[SFTP] How do you start an interactive SFTP session?	sftp user@host.
+[SFTP] What SFTP command downloads a remote file?	get <file>.
+[SFTP] What SFTP command uploads a local file?	put <file>.
+[SFTP] What SFTP command lists files on the local system?	lls.
+[SFTP] Can a Linux account be configured for SFTP-only access?	Yes; SSH can be configured to allow SFTP without an interactive shell.
+[SCP vs SFTP] What is the key difference between SCP and SFTP?	SCP is primarily direct file copying; SFTP provides an interactive file-transfer session.
+[SCP vs SFTP] Where can SCP transfer files?	Anywhere the user can establish an SSH connection.

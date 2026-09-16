@@ -1,0 +1,42 @@
+Archiving: Combines multiple files into	One archive
+Compression: Reduces	File size
+
+cpio: Create archive	-o
+cpio: Extract archive	-i
+
+dd: Input file option	if=
+dd: Output file option	of=
+dd: Common use	Disk imaging
+
+tar: Create archive	-c
+tar: Extract archive	-x
+tar: Archive filename	-f
+
+gzip: Compress command	gzip
+gzip: Decompress option	-d
+gzip: Decompress command	gunzip
+gzip extension	.gz
+gzip shorthand extension	.tgz
+
+bzip2: Compress command	bzip2
+bzip2: Decompress option	-d
+bzip2: Decompress command	bunzip2
+bzip2 extension	.bz2
+
+xz: Compress command	xz
+xz: Decompress option	-d
+xz: Decompress command	unxz
+xz extension	.xz
+xz shorthand extension	.txz
+
+Compression: Keep original file	-k
+
+tar + gzip option	-z
+tar + bzip2 option	-j
+tar + xz option	-J
+
+zip: Compress recursively	-r
+zip: Extract archive	unzip
+
+Archive recursively	tar
+zip: Recursive option	-r

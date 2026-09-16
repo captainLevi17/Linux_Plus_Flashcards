@@ -1,0 +1,35 @@
+mkfs.ext4: Create ext4 filesystem	mkfs.ext4 <device>
+mkfs.xfs: Create XFS filesystem	mkfs.xfs <device>
+
+fsck: Check and repair filesystem	fsck <device>
+fsck: Force filesystem check	fsck -f <device>
+fsck: Automatically repair errors	fsck -y <device>
+
+xfs_repair: Repair XFS filesystem	xfs_repair <device>
+
+tune2fs: Show ext filesystem settings	tune2fs -l <device>
+tune2fs: Set filesystem label	tune2fs -L <label> <device>
+tune2fs: Set mount count before fsck	tune2fs -c <count> <device>
+tune2fs: Set time-based fsck interval	tune2fs -i <time> <device>
+
+dumpe2fs: Display ext filesystem metadata	dumpe2fs <device>
+
+xfs_info: Display XFS filesystem information	xfs_info <mountpoint>
+
+badblocks: Scan device for bad blocks	badblocks <device>
+
+e2label: Display ext filesystem label	e2label <device>
+e2label: Set ext filesystem label	e2label <device> <label>
+
+xfs_admin: Set XFS filesystem label	xfs_admin -L <label> <device>
+
+blkid: Display filesystem UUID	blkid
+lsblk: Display block devices and filesystems	lsblk -f
+
+Filesystem UUID: Purpose	Unique filesystem identifier
+Filesystem label: Purpose	Human-readable identifier
+
+ext2/ext3/ext4: Online resize	Yes
+XFS: Shrink filesystem	No
+XFS: Grow filesystem	xfs_growfs <mountpoint>
+resize2fs: Resize ext filesystem	resize2fs <device>

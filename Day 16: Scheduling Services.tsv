@@ -1,0 +1,19 @@
+What daemon schedules a command to run once at a specific future time?	At
+[At] How do you see queued at jobs?	Run `atq`.
+[At] How do you remove a queued at job?	Run `atrm <job_number>`.
+[At command ]Schedule a command to run two minutes later.	at now +2 minutes
+What daemon runs commands repeatedly at scheduled intervals?	Cron
+[Cron] What are the five cron timing fields?	Minute, hour, day of month, month, day of week.
+[Cron] What does `*` mean in a cron field?	Every possible value for that field.
+[Cron] What number represents Sunday in the day-of-week field?	0 or 7.
+[Cron] What does `37 14 * * 3` mean?	Run at 2:37 PM every Wednesday.
+[Cron] What does `*/15` mean in a cron field?	Every 15 units of that field, e.g. every 15 minutes when used in the minute field.
+[Cron] How do you edit a user's personal crontab?	Run `crontab -e`.
+[Cron] Where are user crontabs stored?	`/var/spool/cron/<username>`.
+[Cron] How can you discard cron command output?	Redirect standard output to `/dev/null`.
+[System Cron] What is the format of a system-wide cron entry?	Minute, hour, day of month, month, day of week, username, command.
+[System Cron] The system-wide crontab file; its entries include a username field.	
+[System Cron] Should you normally edit `/etc/crontab` directly for custom jobs?	No
+[Cron Directories] Do scripts in `/etc/cron.daily/` contain five cron timing fields?	No. They are executable scripts; the directory determines the schedule.
+[Cron Directories] When do scripts in `/etc/cron.monthly/` run?	They run on the first day of every month or according to the system's configured schedule.
+[Cron] How can comma-separated values be used in cron?	They specify multiple values, e.g. `9,39` in the minute field runs at minutes 9 and 39.

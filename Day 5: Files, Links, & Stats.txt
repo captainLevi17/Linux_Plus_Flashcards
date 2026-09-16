@@ -1,0 +1,34 @@
+Command: Print working directory	pwd
+Command: Change directory	cd
+Shortcut: Home directory	~
+Shortcut: Current directory	.
+Shortcut: Parent directory	..
+
+Command: Create empty file	touch
+Command: Create directory	mkdir
+Command: Remove empty directory	rmdir
+Command: Remove file	rm
+Command: Remove recursively	rm -r
+Command: Force remove	rm -f
+
+Command: Display directory tree	tree
+Command: Show file contents	cat
+
+Command: Create hard link	ln
+Command: Create symbolic link	ln -s
+
+Hard link: Points to	Inode
+Symbolic link: Points to	Filename
+
+Hard link: Delete original	Still works
+Symbolic link: Delete original	Broken
+
+Command: File type	file
+Command: File metadata	stat
+
+stat: Access time	atime
+stat: Modify time	mtime
+stat: Metadata change	ctime
+
+Command: List all files	ls -a
+Command: Long listing	ls -l

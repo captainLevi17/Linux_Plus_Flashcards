@@ -1,0 +1,20 @@
+[Name Resolution] What file controls the order and sources used by glibc programs for resolving hostnames?	`/etc/nsswitch.conf`.
+[nsswitch.conf] What does `files` mean in the `hosts` entry of `nsswitch.conf`?	Check `/etc/hosts` for a hostname mapping.
+[Hosts File] What is `/etc/hosts` used for?	Local hostname-to-IP address mappings.
+[DNS] What file specifies the DNS servers that programs use for name resolution?	`/etc/resolv.conf` (Ubuntu uses its internal address 127.x.x.x before using DNS server).
+[DNS] What command displays the system’s current DNS resolver configuration and status?	`resolvectl status`.
+[resolvectl] What command flushes the local DNS resolver cache?	`resolvectl flush-caches`.
+[hostnamectl] What command displays detailed hostname and related system information?	`hostnamectl`.
+[hostnamectl] How do you permanently change the system hostname with `hostnamectl`?	Run `hostnamectl hostname <new_hostname>`.
+[DNS Tools] Which command-line tools can directly query DNS servers without using the `nsswitch.conf` lookup order?	`dig`, `nslookup`, and `host`.
+[dig] Does `dig` use the `nsswitch.conf` lookup order?	No. `dig` directly queries DNS.
+[dig] What option performs a reverse DNS lookup for an IP address?	`-x`.
+[DNS] What type of DNS record is used for reverse DNS lookups?	PTR.
+[nslookup] Does `nslookup` automatically perform a reverse DNS lookup?	Yes
+[nslookup] How do you query for MX records with `nslookup`?	Use `nslookup -type=MX <domain>`.
+[host] What command performs a basic DNS lookup?	`host <domain>`.
+What command queries domain-registration information?	`whois <domain>`.
+[DNS Records] What DNS record maps a hostname to an IPv4 address?	An A record.
+[DNS Records] What DNS record maps a hostname to an IPv6 address?	An AAAA record.
+[DNS Records] What DNS record aliases one hostname to another hostname?	A CNAME record.
+[Name Resolution] What is the difference between `nsswitch.conf` and `resolv.conf`?	`nsswitch.conf` controls the lookup sources/order; `resolv.conf` specifies resolver configuration such as DNS servers.

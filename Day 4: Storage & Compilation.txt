@@ -1,0 +1,43 @@
+[Storage] File storage: Stores data as	File + directory
+[Storage] Block storage: Best for	Databases
+[Storage] Block storage: Has metadata	No
+[Storage] Object storage: Access method	API
+[Storage] Object storage: Identifier	UUID
+[Storage] Object storage example	Amazon S3
+[Storage] Object storage: Has metadata	Yes
+
+[Partition] BIOS partition table	MBR
+[Partition] UEFI partition table	GPT
+[Partition] GPT stands for	GUID Partition Table
+[Partition] MBR stands for	Master Boot Record
+[Partition] GPT compatibility	Protective MBR
+
+[FUSE] FUSE stands for	Filesystem in Userspace
+[FUSE] Mount without root	FUSE
+[FUSE] SSH filesystem	sshfs
+[FUSE] Unmount command	umount
+
+[RAID] RAID stands for	Redundant Array of Independent Disks
+[RAID 0] Layout	Stripe
+[RAID 0] Usable space	100%
+[RAID 0] Redundancy	None
+[RAID 0] Advantage	Speed
+
+[RAID 1] Layout	Mirror
+[RAID 1] Usable space	50%
+[RAID 1] Advantage	Redundancy
+
+[RAID 5] Layout	Striping + parity
+[RAID 5] Usable space	N−1 drives
+[RAID 5] Drive failures tolerated	1
+[RAID 5] Advantage	Speed + redundancy
+
+[Source] Configure script	./configure
+[Source] Compile command	make
+[Source] Install command	sudo make install
+
+[Build] Ubuntu build tools	build-essential
+[Build] RHEL build tools	Development Tools
+[Build] RHEL install command	dnf groupinstall "Development Tools"
+
+[Utility] Locate executable	which

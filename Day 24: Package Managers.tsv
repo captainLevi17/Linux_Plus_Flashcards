@@ -1,0 +1,24 @@
+[RPM] What does RPM stand for?	Red Hat Package Manager.
+[RPM] What command manually installs an RPM package file?	rpm -i <package.rpm>.
+[DEB] What command manually installs a DEB package file?	dpkg -i <package.deb>.
+[Dependencies] What problem can occur when manually resolving package dependencies one by one?	Dependency hell, where each required package may introduce additional dependencies.
+[YUM] What does YUM stand for?	Yellow Dog Updater, Modified.
+[DNF] What does DNF stand for?	Dandified YUM.
+[YUM vs DNF] What is a major advantage of DNF over YUM?	DNF provides additional features, including transaction rollback.
+[YUM/DNF] What command installs a package with YUM or DNF?	yum install <package> or dnf install <package>.
+[DNF] What command displays DNF transaction history?	dnf history.
+[DNF] How can you undo a specific DNF transaction?	sudo dnf history undo <ID>.
+[DNF] Why can dnf upgrade be riskier than dnf update?	It may remove obsolete packages that are still needed by software or workflows.
+Which package manager is used by SUSE/openSUSE systems?	Zypper.
+[Zypper] What command updates installed packages?	sudo zypper update.
+[Zypper] What command searches configured repositories for a package?	zypper search <package>.
+[Zypper] What command installs only available important/security patches?	sudo zypper patch.
+[Zypper] What does zypper dist-upgrade do?	Performs a distribution-level upgrade that can remove or replace packages.
+[Zypper] Why is dist-upgrade commonly used on openSUSE Tumbleweed?	Tumbleweed is a rolling-release distribution and uses distribution upgrades to stay current.
+[APT] What package format does APT manage?	DEB packages.
+[APT] What does sudo apt update do?	Refreshes the local cache of available packages and repository versions.
+[APT] What does sudo apt upgrade do?	Upgrades installed packages without making the broader removals or changes associated with a distribution upgrade.
+[APT] Why can apt dist-upgrade be riskier than apt upgrade?	It can remove packages and make broader dependency changes to move the system to newer distribution versions.
+[APT] What is the typical Debian/Ubuntu update sequence for routine package maintenance?	sudo apt update followed by sudo apt upgrade.
+[Kernel Updates] Why can a kernel update require a reboot?	The new kernel must be loaded, and associated modules may need to be rebuilt or activated.
+[Security Updates] Why are security-focused package updates important?	They apply fixes for known security vulnerabilities.

@@ -1,0 +1,19 @@
+[Signals] What command is commonly used to send signals to a process?	kill
+[Signals] What signal does `kill` send by default?	SIGTERM (signal 15).
+[SIGTERM] What does SIGTERM mean?	Signal terminate; it asks a process to stop.
+[SIGTERM] What is the signal number for SIGTERM?	15
+[SIGKILL] What does SIGKILL do?	Immediately terminates a process.
+[SIGKILL] What is the signal number for SIGKILL?	9
+[SIGHUP] What does SIGHUP mean?	Signal hang up; traditionally indicates that a connection was disconnected.
+[SIGHUP] What is the signal number for SIGHUP?	1
+[nohup] What does `nohup` do?	Prevents a process from receiving SIGHUP.
+[SIGINT] What signal does Ctrl+C send?	SIGINT (signal 2).
+[SIGINT] What does SIGINT mean?	Signal interrupt.
+[SIGINT] What normally happens when a process receives SIGINT?	It terminates, unless the program is designed to ignore or handle the signal differently.
+[SIGUSR1] What is the signal number for SIGUSR1?	10
+[kill] How can you specify a signal by name?	`kill -<signal_name> <PID>`, e.g. `kill -SIGKILL <PID>`.
+[Command] Returns the PID of a process when you know its exact name.	pidof <process name>
+[killall] Does `killall` require you to know the PID?	No, just the exact process name.
+[Kill Signals - p_____] It can match process names using patterns or regular expressions rather than requiring an exact name.
+It can send a signal to multiple matching processes, especially when run with root privileges.	pkill
+When a process does not respond to SIGTERM or is otherwise stuck and needs to be forcibly terminated, what other signal can be used? SIGKILL

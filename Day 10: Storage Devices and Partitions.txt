@@ -1,0 +1,29 @@
+lsblk: List block devices	lsblk
+blkid: Show block device UUIDs	blkid
+lsscsi: List SCSI storage devices	lsscsi
+
+fdisk: Open disk for partitioning	fdisk /dev/sdX
+fdisk: Show help	m
+fdisk: Print partition table	p
+fdisk: Create partition	n
+fdisk: Write changes	w
+fdisk: Quit without saving	q
+
+parted: Open partition editor	parted /dev/sdX
+parted: Show help	help
+parted: Print partition table	print
+parted: Create GPT partition table	mklabel gpt
+parted: Create partition	mkpart
+parted: Quit	quit
+
+partprobe: Reload partition table	partprobe
+
+dd: Wipe beginning of disk	dd if=/dev/zero of=/dev/sdX count=100
+
+df: Show filesystem usage	df -h
+du: Show directory size	du -sh <directory>
+
+FCstat: Show Fibre Channel adapter info	FCstat
+
+Partition table: Legacy BIOS	MBR
+Partition table: UEFI	GPT

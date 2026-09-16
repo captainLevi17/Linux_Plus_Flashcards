@@ -1,0 +1,25 @@
+LVM: Physical volume (PV)	Create with pvcreate <device>
+LVM: Display physical volumes	pvdisplay
+
+LVM: Volume group (VG)	Create with vgcreate <name> <pv...>
+LVM: Display volume groups	vgdisplay
+LVM: Extend volume group	vgextend <vg> <pv>
+
+LVM: Logical volume (LV)	Create with lvcreate -L <size> -n <name> <vg>
+LVM: Display logical volumes	lvdisplay
+LVM: Extend logical volume	lvextend -L +<size> <lv>
+
+LVM: Resize filesystem after extending	lvextend -r -L +<size> <lv>
+
+LVM: Deactivate logical volume	lvchange -an <lv>
+LVM: Activate logical volume	lvchange -ay <lv>
+
+LVM: Physical volume (PV)	Physical disk or partition
+LVM: Volume group (VG)	Collection of physical volumes
+LVM: Logical volume (LV)	Virtual block device
+
+LVM: Device path	/dev/<vg>/<lv>
+
+LVM: Provides data redundancy	No
+LVM: Supports online expansion	Yes
+LVM: Recommended backing storage	RAID

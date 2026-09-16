@@ -1,0 +1,24 @@
+BIOS	Basic Input/Output System
+UEFI	Unified Extensible Firmware Interface
+UEFI boot partition	EFI
+UEFI max drive support	>2 TB
+Network boot	PXE
+PXE	Preboot Execution Environment
+HTTP network boot	iPXE
+Linux bootloader	GRUB 2
+Compressed kernel	vmlinuz
+Kernel	vmlinux
+Temporary boot disk	initrd
+Temporary RAM filesystem	initramfs
+Create initrd	mkinitrd
+Initramfs tool	dracut
+Kernel config (Ubuntu)	/etc/default/grub
+Update GRUB (Ubuntu)	update-grub
+Install GRUB	grub-install
+Generate GRUB config	grub-mkconfig
+GRUB config (RHEL)	/boot/grub2/grub.cfg
+Generate GRUB (RHEL)	grub2-mkconfig
+Show GRUB menu	Hold Shift
+Memory test	memtest
+Kernel panic cause	Hardware
+Rollback kernel	GRUB Advanced Options

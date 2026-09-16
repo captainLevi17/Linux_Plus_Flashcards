@@ -1,0 +1,38 @@
+Mount NFS share	mount -t nfs <server>:<share> <mountpoint>
+
+Mount SMB/CIFS share	mount -t cifs //<server>/<share> <mountpoint> -o username=<user>,password=<pass>
+
+Mount SMB/CIFS share using credentials file	mount -t cifs //<server>/<share> <mountpoint> -o credentials=<file>
+
+NFS: Requires username/password	No
+SMB/CIFS: Requires username/password	Yes
+
+SMB version 1 dialect	CIFS
+Linux package for SMB mounts	cifs-utils
+Linux package for NFS mounts	nfs-common
+
+Display mounted filesystems	df -h
+
+Discover iSCSI targets	iscsiadm --mode discovery --type sendtargets --portal <ip>
+
+iscsiadm: Log in to iSCSI target	iscsiadm --mode node --targetname <iqn> --portal <ip> --login
+
+Display block devices	lsblk
+
+Display multipath devices	multipath -ll
+
+Create ext4 filesystem	mkfs.ext4 <device>
+
+Mount ext4 filesystem	mount -t ext4 <device> <mountpoint>
+
+Multipath device path	/dev/mapper/mpatha
+
+iSCSI configuration file	/etc/iscsi/iscsid.conf
+
+iSCSI: Automatically log in on boot	node.startup=automatic
+
+Multipath: Primary benefit	Path redundancy
+
+iSCSI: Provides	Remote block storage
+
+NFS: Provides	Remote file storage

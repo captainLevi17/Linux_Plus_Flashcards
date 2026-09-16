@@ -1,0 +1,24 @@
+FHS	Filesystem Hierarchy Standard
+Everything in Linux	File
+User home	/home
+Root home	/root
+Boot files	/boot
+System configs	/etc
+Add-on packages	/opt
+Removable media	/media
+Temporary mounts	/mnt
+Temporary files	/tmp
+Persistent temp	/var/tmp
+Variable data	/var
+Essential binaries	/bin
+Essential admin binaries	/sbin
+System libraries	/lib
+User binaries	/usr/bin
+User libraries	/usr/lib
+Local software/scripts	/usr/local
+Devices	/dev
+Process info	/proc
+Kernel/device info	/sys
+Current directory	.
+Parent directory	..
+List directory tree	tree

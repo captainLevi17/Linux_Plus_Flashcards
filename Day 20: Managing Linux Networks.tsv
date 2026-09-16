@@ -1,0 +1,25 @@
+[IP] What command displays IP addresses and network interface information?	`ip address` or `ip addr` or ifconfig
+[IP] What command displays the system's routing table?	`ip route`.
+[ARP] What does ARP resolve on a local network?	An IP address to a MAC address.
+[IP] What command displays known neighbor/ARP information?	`ip neighbor`.
+[Net-tools] What command displays the routing table?	`route`.
+[Net-tools] What command displays ARP cache information?	`arp`.
+[Hostname] What does `hostname -d` display?	The system's DNS domain name.
+[Hostname] What option displays the fully qualified domain name?	`hostname -f`.
+[Hostname] Where is the hostname stored persistently on a traditional Linux system?	`/etc/hostname`.
+What service commonly manages network interfaces in GUI-based Linux systems?	NetworkManager.
+[NetworkManager] What command-line tool is used to manage NetworkManager?	`nmcli`.
+[nmcli] How do you check whether networking is enabled?	Use `nmcli networking`.
+[nmcli] How do you enable networking with `nmcli`?	Run `nmcli networking on`.
+[nmcli] How do you disable networking with `nmcli`?	Run `nmcli networking off`.
+[RHEL 8] What is an `ifcfg-*` file used for?	Storing configuration for an individual network interface.
+[Ubuntu] What directory contains Netplan configuration files?	`/etc/netplan/`.
+[Ubuntu] What networking configuration system is commonly used on Ubuntu Server?	Netplan.
+[Sockets] What modern command displays network socket and connection information?	`ss`.
+[Net-tools] What older command does `ss` replace?	`netstat`.
+[ss/netstat] What does the `-t` option show?	TCP sockets.
+[ss/netstat] What does the `-u` option show?	UDP sockets.
+[ss/netstat] What does the `-n` option do?	Displays numeric addresses and port numbers instead of resolving names.
+[ss/netstat] What does the `-a` option show?	All sockets, including listening and non-listening sockets.
+[IP] Are changes made with `ip` commands normally persistent across reboots?	No. They normally affect the current runtime state only.
+[NetworkManager] Which methods can make persistent NetworkManager configuration changes?	NetworkManager's GUI, `nmcli`, or direct editing of the appropriate configuration files.

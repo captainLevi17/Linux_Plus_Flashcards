@@ -1,0 +1,16 @@
+[Traceroute] What is traceroute used for?	Tracing the network path to a destination hop by hop.
+[Traceroute] What does *** at a hop usually indicate?	No ICMP reply was received from that hop.
+[MTR] What does MTR stand for?	My Traceroute.
+[MTR] What does MTR display for each hop?	Path information, latency statistics, and packet loss.
+[MTR] What option allows MTR to use UDP instead of ICMP?	—udp or -u.
+[MTR] What option allows MTR to use TCP instead of ICMP?	—tcp or -t.
+[TCP Dump] What is tcpdump used for?	Capturing and inspecting network packets seen by an interface.
+[tcpdump] What option selects a specific capture interface?	-i <interface>.
+[tcpdump] What option writes captured packets to a file?	-w <file>.
+[tcpdump] What file format is commonly used for captured packets?	PCAP.
+[tcpdump] How do you filter packets involving a specific host?	Use the host filter, such as host 192.168.1.1.
+[tcpdump] How do you filter packets only from a specific source host?	Use src host <IP>.
+[tcpdump] How do you filter packets only to a specific destination host?	Use dst host <IP>.
+[Packet Capture] What switch feature can provide a copy of traffic to a monitoring port?	A port mirror/SPAN feature.
+[TShark] What option specifies a capture filter in TShark?	-f.
+[Wireshark] What is Wireshark primarily used for?	GUI-based packet capture and detailed packet analysis.

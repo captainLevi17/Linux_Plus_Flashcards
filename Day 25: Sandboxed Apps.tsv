@@ -1,0 +1,23 @@
+[Flatpak]	What is a Flatpak remote?	A repository source for Flatpak applications.
+[Flatpak]	What command installs a Flatpak application?	flatpak install <remote> <application>.
+[Flatpak]	What can installing a .flatpakref file automatically set up?	The application's Flatpak remote and application information.
+[Flatpak]	Are Flatpak applications installed system-wide by default?	Yes; by default they are installed system-wide.
+[Flatpak]	Can Flatpak applications be installed for only the current user?	Yes, using the --user option.
+[Flatpak]	What is a major advantage of Flatpak dependency isolation?	Applications can avoid conflicts between different dependency versions.
+[Flatpak]	How do you search for a Flatpak application?	flatpak search <term>.
+[Flatpak]	How can a Flatpak application be run from the command line?	flatpak run <application-id>.
+[Snap]	Which Linux distribution is especially associated with Snap?	Ubuntu.
+[Snap]	Are Snap packages installed system-wide by default?	Yes.
+[Snap]	What command lists installed Snap packages?	snap list.
+[Snap]	What command searches for a Snap package?	snap search <term>.
+[Snap]	What command installs a Snap package?	snap install <package>.
+[Snap]	What is a major benefit of Snap for application distribution?	An application can run across supported Linux distributions without relying on the host's package versions.
+[Snap]	What is one concern with sandboxed Snap or Flatpak applications?	They may not work perfectly on every system or hardware configuration.
+[AppImage]	What is an AppImage?	A standalone application distributed as a single executable file.
+[AppImage]	Does installing an AppImage normally require root privileges?	No.
+[AppImage]	How do you make an AppImage executable?	chmod +x <AppImage>.
+[AppImage]	What is a major advantage of AppImage?	It is simple and self-contained, with no traditional installation required.
+[AppImage]	How can an AppImage potentially update itself?	The application may check for and offer a newer version when it starts.
+[Sandboxed Apps]	Why can sandboxed applications start more slowly?	Their required runtime or dependencies may need to be loaded separately.
+[Flatpak vs Snap]	Which sandboxed application format is mainly associated with Ubuntu?	Snap.
+[AppImage vs Flatpak/Snap]	What is the key difference between AppImage and Flatpak/Snap?	AppImage is a single executable file without a package repository or traditional installation system.

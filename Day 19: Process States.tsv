@@ -1,0 +1,20 @@
+[Process States] What process state means that a process is currently executing?	R (running).
+[Process States] What process state means that a process is paused but not terminated?	T (stopped).
+[Process States] What letter represents interruptible sleep in `ps`?	S.
+[Process States] What letter represents uninterruptible sleep in `ps`?	D.
+[Process States] What is a terminated child process that remains in the process table because its parent has not cleaned it up.	Zombie process
+[Process States] What letter represents a zombie process in `ps`?	Z.
+[Process States] Can a zombie process be killed with `SIGKILL`?	No. The process has already terminated.
+[Process States] Why are zombie processes generally not consuming CPU?	They are already terminated; only their process-table entry remains.
+[Signals] What signal does Ctrl+C normally send to a foreground process?	SIGINT.
+[Signals] What signal does Ctrl+Z normally send to a foreground process?	SIGSTP.
+[Signals] Does Ctrl+D send a signal?	No. It sends EOF (end-of-file) to the terminal/application.
+[Jobs] What command lists the jobs associated with the current shell?	`jobs`.
+[Jobs] What does the `+` marker mean in `jobs` output?	The current/default job for job-control commands.
+[Jobs] How do you bring the current/default background job to the foreground?	Use `fg`.
+[Jobs] How do you bring a specific job to the foreground?	Use `fg %<job_number>`.
+[Jobs] How do you resume the current/default stopped job in the background?	Use `bg`.
+[Jobs] How do you resume a specific stopped job in the background?	Use `bg %<job_number>`.
+[Jobs] How do you start a command directly in the background?	Append `&` to the command.
+[ps] Which `ps` option can display selected process columns?	The `-o` option.
+[ps] What does the `WCHAN` field in `ps` indicate?	The kernel wait channel a process is sleeping or waiting in.

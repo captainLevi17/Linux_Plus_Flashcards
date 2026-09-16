@@ -1,0 +1,23 @@
+Secure Copy command	scp
+Remote sync command	rsync
+Network utility command	nc (netcat)
+
+Copy file to remote host	scp <source> <user>@<host>:<destination>
+Copy file from remote host	scp <user>@<host>:<source> <destination>
+
+Copy directory recursively	scp -r <source> <user>@<host>:<destination>
+
+Sync directory to remote	rsync -r <source> <user>@<host>:<destination>
+Sync remote directory locally	rsync -r <user>@<host>:<source> <destination>
+
+rsync: Verbose mode	rsync -v
+rsync: Recursive mode	rsync -r
+
+Netcat: Listen on port	nc -l <port>
+Netcat: Connect to host	nc <host> <port>
+
+Receive file with netcat	nc -l <port> > <file>
+Send file with netcat	nc <host> <port> < <file>
+
+rsync: Default transport	SSH
+rsync: Copies only	Changed files

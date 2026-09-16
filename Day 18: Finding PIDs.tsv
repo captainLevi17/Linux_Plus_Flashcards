@@ -1,0 +1,27 @@
+[lsof] What does the `lsof` command stand for?	List open files.
+[lsof] How can you use `lsof` to show open files for a particular user?	Use `lsof -u <username>`.
+[lsof] How can you limit `lsof` output to network-related entries?	Use `lsof -i`.
+[Processes] What command shows a snapshot of running processes?	`ps`.
+[ps] What does PID mean?	Process ID.
+[ps] What PID is normally assigned to the first command that runs on a Linux system?	PID 1.
+[ps] How can you use `ps aux` to find a particular process?	Pipe it through `grep`, for example `ps aux | grep mousepad`.
+[top] What does `top` sort by default?	CPU usage.
+[top] How do you get help while running `top`?	Press `h`.
+[top] How do you move the sort column to the right in `top`?	Press `>` (Shift + period on a US keyboard).
+[top] How do you reverse the sort order in `top`?	Press capital `R`.
+A newer, more robust interactive process viewer similar to `top`.	htop
+[htop] Is `htop` installed by default on every Linux distribution?	No. It may need to be installed.
+[nice] What is a process's nice level used for?	To control its CPU scheduling priority.
+[nice] What is the default nice level?	0.
+[nice] What nice level gives a process the highest priority?	-19.
+[nice] What nice level gives a process the lowest priority?	19.
+[nice] Does a lower nice value mean higher or lower priority?	Higher priority.
+[nice] Does a higher positive nice value mean higher or lower priority?	Lower priority.
+[nice] How do you start a program with a specific nice level?	Use `nice -n <value> <command>`.
+[nice] Give an example of starting a program with nice level 10.	`nice -n 10 <command>`.
+[renice] What command changes the nice level of a running process?	`renice`.
+[renice] How do you change a running process to nice level 19?	Use `renice -n 19 <PID>` (the transcript demonstrates changing from 10 to 19).
+[nice] Can a regular user increase a process's priority above the default nice level of 0?	No. Root privileges are required.
+[nice] Can a regular user lower the priority of a process they own?	Yes.
+[nice] What privilege is required to give a process a negative nice value?	Root privileges.
+[nice] Why does the transcript recommend using `nice -n` instead of the shorthand `nice -10`?	Because the shorthand is confusing: `nice -10` means nice level 10, not negative 10.

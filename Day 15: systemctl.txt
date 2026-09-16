@@ -1,0 +1,25 @@
+Check service status	systemctl status <service>
+
+Start service immediately	systemctl start <service>
+Stop service immediately	systemctl stop <service>
+Restart service	systemctl restart <service>
+
+Enable service at boot	systemctl enable <service>
+Disable service at boot	systemctl disable <service>
+
+Mask service	systemctl mask <service>
+Unmask service	systemctl unmask <service>
+
+systemctl: "start" affects	Current session only
+systemctl: "stop" affects	Current session only
+
+systemctl: "enable" affects	Boot only
+systemctl: "disable" affects	Boot only
+
+systemctl: "mask" prevents	Manual and automatic start
+systemctl: "unmask" allows	Service to start again
+
+Masking a service creates symlink	/etc/systemd/system/<service>.service -> /dev/null
+
+systemctl status: Running service state	active (running)
+systemctl status: Stopped service state	inactive (dead)

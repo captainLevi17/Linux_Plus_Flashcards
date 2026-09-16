@@ -1,0 +1,38 @@
+mount: Mount filesystem	mount <device> <mountpoint>
+umount: Unmount filesystem	umount <mountpoint>
+
+mount: Mount all filesystems from fstab	mount -a
+mount: Specify filesystem type	mount -t <type> <device> <mountpoint>
+
+fstab: System mount configuration	/etc/fstab
+crypttab: Encrypted device configuration	/etc/crypttab
+
+blkid: Show UUIDs	blkid
+lsblk: Show block devices	lsblk
+lsblk: Show filesystems	lsblk -f
+df: Show mounted filesystems	df -h
+
+fstab: Device by UUID	UUID=<uuid>
+fstab: Device by label	LABEL=<label>
+fstab: Default mount options	defaults
+
+Filesystem check (root)	1
+Filesystem check (non-root)	2
+Filesystem check (disabled)	0
+
+systemctl: Reload systemd	systemctl daemon-reload
+systemctl: Start mount unit	systemctl start <mount>.mount
+systemctl: Enable mount unit	systemctl enable <mount>.mount
+
+LUKS: Encrypt partition	cryptsetup luksFormat <device>
+LUKS: Open encrypted device	cryptsetup open <device> <name>
+LUKS: Close encrypted device	cryptsetup close <name>
+
+mkfs.ext4: Create ext4 filesystem	mkfs.ext4 <device>
+
+LUKS: Decrypted device path	/dev/mapper/<name>
+
+Mount unit location	/etc/systemd/system
+Generated mount units	/run/systemd/generator
+
+Mount unit filename	<mountpoint>.mount
