@@ -1,0 +1,31 @@
+Text editor: Beginner-friendly	Nano
+Text editor: Installed almost everywhere	vi
+Text editor: Improved version of vi	vim
+
+Nano: Open/create file	nano <file>
+Nano: Save file	Ctrl+O
+Nano: Exit editor	Ctrl+X
+Nano: Cut line	Ctrl+K
+Nano: Paste line	Ctrl+U
+Nano: Show help	Ctrl+G
+
+vi/vim: Edit mode	Insert mode
+vi/vim: Default mode	Command mode
+vi/vim: Enter insert mode	i
+vi/vim: Return to command mode	Esc
+
+vi/vim: Save file	:w
+vi/vim: Quit	:q
+vi/vim: Save and quit	:wq
+vi/vim: Quit without saving	:q!
+
+vi/vim: Delete line	dd
+vi/vim: Delete word	dw
+vi/vim: Delete character	dl
+
+vim: Syntax highlighting	Yes
+vim: Arrow keys in insert mode	Yes
+vi: Arrow keys in insert mode	No
+
+Ubuntu Desktop: Default editor	vi
+Ubuntu Server: Default editor	vim

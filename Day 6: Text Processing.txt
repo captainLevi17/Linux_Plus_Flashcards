@@ -1,0 +1,20 @@
+Tool: Format text	printf
+Tool: Stream editor	sed
+Tool: Field processor	awk
+
+printf: New line	\n
+printf: Tab	\t
+
+sed: Substitute	s/old/new/
+sed: Global substitute	s/old/new/g
+sed: Delete line	Nd
+sed: Print line	Np
+sed: Suppress default output	-n
+sed: Edit file in place	-i
+
+awk: Default field separator	Space
+awk: Set field separator	-F
+awk: Print field	{print $n}
+
+awk: Third field	{print $3}
+Pipe operator	|

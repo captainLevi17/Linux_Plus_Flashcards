@@ -1,0 +1,17 @@
+[Services] What is the difference between restarting and reloading a service?	Restart stops and starts the service; reload keeps it running and attempts to apply the updated configuration.
+[Services] What is a risk of restarting a service after a bad configuration change?	The service may fail to start, leaving the service unavailable.
+[systemd] What command is used to reload a service on a systemd-based Linux system?	systemctl reload <service>.
+[service] What legacy command can still be used on systems with SysV compatibility?	service <service> <action>.
+[Apache] Where are Apache HTTP server configuration files commonly located on a Red Hat-based system?	Under /etc/httpd/, including configuration directories such as conf.d/.
+[RPM]  A package update provides a new version of the config file	.rpmnew file
+[RPM] During an upgrade/removal. RPM needs to replace or remove the existing file	.rpmsave file
+[APT] Where is the main APT configuration directory?	/etc/apt/.
+[APT] What file defines APT package repositories?	/etc/apt/sources.list.
+Directory where separate repository configuration files are stored which APT loads in addition to sources.list	/etc/apt/sources.list.d
+[APT] How can a repository be removed when it is defined in sources.list.d?	Remove its corresponding repository configuration file.
+[Configuration] Why are .d configuration directories common in Linux?	They simplify adding or removing individual configuration components without editing a monolithic configuration file.
+[YUM] Where are YUM repository configuration files commonly stored on RPM-based systems?	/etc/yum.repos.d/.
+[DNF] Where are DNF configuration files commonly located?	Under /etc/dnf/.
+[YUM and DNF] Can YUM and DNF use the same repository configuration files?	Yes; repository definitions in the relevant .repo configuration directory can be used by the RPM package-management stack.
+[YUM and DNF] Do you normally need to restart a YUM or DNF daemon after changing their configuration?	No; YUM and DNF generally read their configuration when the command is launched rather than using a continuously running daemon.
+[Package Managers] Which package-management systems discussed use configuration files under /etc?	APT, YUM, and DNF.
