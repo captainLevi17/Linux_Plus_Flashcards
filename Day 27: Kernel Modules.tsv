@@ -1,0 +1,10 @@
+[Kernel Modules] Which command displays all currently active and inserted kernel modules on a running system?	lsmod
+[Kernel Modules] What is the difference between insmod and modprobe when inserting a kernel module?	modprobe automatically resolves and loads module dependencies and requires only the module name, while insmod requires the full file path and does not handle dependencies.
+[Kernel Modules] Which command is used to remove a currently loaded module from the running Linux kernel?	rmmod
+[Kernel Modules] How does modprobe differ from rmmod when unloading kernel modules?	modprobe -r removes the specified module along with its unused dependencies, whereas rmmod only removes the specified module.
+[Kernel Modules] Which command displays detailed information about a kernel module, such as its author, license, description, and parameters?	modinfo <module_name>
+[Kernel Modules] Which command displays messages from the kernel ring buffer, useful for verifying if a module loaded or unloaded successfully?	dmesg
+[Kernel Management] Which command is used to view or modify kernel runtime parameters at interface level or in real-time?	sysctl
+[Kernel Management] In which directory within /proc are kernel runtime parameters exposed for sysctl modifications?	/proc/sys/
+[Kernel Management] Which file contains persistent settings for kernel runtime parameters that are applied at boot?	/etc/sysctl.conf (or files within /etc/sysctl.d/)
+[Kernel Management] What sysctl command reloads and applies settings from the /etc/sysctl.conf file without requiring a system reboot?	sysctl -p
