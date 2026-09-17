@@ -1,0 +1,14 @@
+[SSH Configuration] Which configuration file is used to configure settings for the OpenSSH server daemon?	/etc/ssh/sshd_config
+[SSH Configuration] Which configuration file is used to configure client-side settings for outgoing SSH connections?	/etc/ssh/ssh_config
+[SSH Configuration] In /etc/ssh/sshd_config, what does setting PermitRootLogin to prohibit-password (or prohibit-password/without-password) enforce?	It allows root login only via SSH public key authentication while disabling root password logins.
+[System Logging] Which configuration file handles default system logging rules and facility destinations for rsyslog?	/etc/rsyslog.conf (or files within /etc/rsyslog.d/, such as 50-default.conf)
+[System Logging] It automatically rotates, compresses, truncates, and mails log files to prevent storage drives from filling up.	logrotate
+[System Localization] Which systemd command is used to view or modify the system's locale settings, keyboard layout, and language defaults?	localectl
+[System Localization] Which subcommand of localectl displays the current locale configurations such as LANG and LC_* settings?	localectl status (or simply localectl)
+[System Localization] Which subcommand of localectl displays all available installed locales on the system?	localectl list-locales
+[Time Synchronization] Which systemd utility is used to query and change the system clock, time zone, and network time synchronization settings?	timedatectl
+[Time Synchronization] Which lightweight, client-only time synchronization daemon is included as part of systemd?	systemd-timesyncd
+[Time Synchronization] Which command using timedatectl enables or disables network time synchronization?	timedatectl set-ntp true (or timedatectl set-ntp 1 / false / 0)
+[Time Synchronization] Which command displays detailed status information specifically for systemd-timesyncd, such as the current NTP server and offset?	timedatectl timesync-status
+[Time Synchronization] Which modern NTP implementation provides faster synchronization and better response to clock drift, replacing traditional ntpd on modern Enterprise Linux distros?	chrony (daemon: chronyd)
+[Time Synchronization] Which command allows interactive administration and monitoring of the chrony NTP daemon?	chronyc
