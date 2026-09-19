@@ -14,7 +14,7 @@ If you don't already have Anki installed, download it from the official website:
 
 https://apps.ankiweb.net/
 
-2. Download a .tsv file
+2. Download a .tsv file or txt file (should still be tab separated)
 
 Choose the topic you want to study and download the corresponding .tsv file from this repository.
 
@@ -82,24 +82,7 @@ If everything looks correct, proceed with the import.
 
 .tsv vs .txt
 
-I use both .tsv and .txt files in this repository, but they serve slightly different purposes.
-
-.tsv
-
-The .tsv files are intended to be imported into Anki.
-
-TSV stands for Tab-Separated Values. Each line represents a flashcard, with the different fields separated by a tab character.
-
-For example:
-
-Question	Answer
-What does chmod do?	Changes file permissions
-What does pwd do?	Displays the current working directory
-.txt
-
-The .txt files are mainly my notes and source material. I use them to keep track of things I'm learning before turning the information into flashcards.
-
-They may therefore contain information that isn't formatted specifically for Anki.
+I use both .tsv and .txt files in this repository.
 
 Studying
 
