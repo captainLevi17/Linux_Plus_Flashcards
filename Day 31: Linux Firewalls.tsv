@@ -1,0 +1,12 @@
+[ufw Administration] Which command is used to enable the Uncomplicated Firewall (UFW) service on Debian/Ubuntu systems?	ufw enable
+[ufw Administration] Which command displays the active status and current rule set of the ufw firewall?	ufw status
+[ufw Administration] How do you permit incoming web traffic for standard HTTP and HTTPS services using ufw?	ufw allow http and ufw allow https (or ufw allow 80/tcp and ufw allow 443/tcp)
+[Firewalld] A predefined security concept that groups network interfaces and traffic rules based on the level of trust assigned to connected networks (e.g., public, home, work, trusted).	zone
+[firewalld Administration] Which command displays the default active zone in a firewalld configuration?	firewall-cmd --get-default-zone
+[firewalld Administration] Which command lists all currently permitted services within the active zone using firewall-cmd?	firewall-cmd --list-services
+[firewalld Administration] How do you temporarily open access for an HTTP service in firewalld versus making the change persistent across reboots?	firewall-cmd --add-service=http (runtime only)
+[Stateful or Stateless?] Monitors the state of active network connections and dynamically permits return traffic for established sessions	Stateful Firewall
+[Stateful or Stateless?] Evaluates each packet independently against static rules without connection tracking	Stateless Firewall
+[iptables or nftables?] Uses separate framework tools for different protocols (IPv4, IPv6, ARP)	iptables
+[iptables or nftables?] Provides a single unified backend engine with improved performance and simplified syntax	nftables
+[firewalld Administration] How do you permanently open access for an HTTP service in firewalld, making the change persistent across reboots?	firewall-cmd --add-service=http --permanent (persistent across reboots).
