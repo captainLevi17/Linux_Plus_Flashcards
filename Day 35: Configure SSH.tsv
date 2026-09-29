@@ -1,0 +1,9 @@
+[SSH User Configuration] What file located in a user's ~/.ssh/ directory overrides system-wide client settings for remote SSH connections?	~/.ssh/config
+[SSH Utilities] Which command generates a public/private key pair for SSH authentication?	ssh-keygen
+[SSH Utilities] Which utility automatically uploads and appends a user's local public key to a remote server's ~/.ssh/authorized_keys file?	ssh-copy-id <user>@<hostname>
+[SSH Tunnels] Which SSH command flag enables X11 forwarding to run remote graphical GUI applications on a local desktop?	ssh -X <user>@<hostname>
+[SSH Tunnels] How do you configure local port forwarding using the ssh command to access a remote service?	ssh -L <local_port>:<target_host>:<target_port> <user>@<ssh_server>
+[SSH Tunnels] What type of proxy connection does dynamic port forwarding create using ssh -D <port>?	A local SOCKS proxy server that routes all client web traffic dynamically through the remote SSH host.
+[SSH File] It stores public key fingerprints of remote servers previously connected to, allowing the client to verify server identity and detect potential man-in-the-middle (MITM) attacks.	~/.ssh/known_hosts file
+[What SSH file? ] It stores the public keys of clients permitted to authenticate and log in to that specific user account without a password.	~/.ssh/authorized_keys file
+ssh-agent holds unencrypted private keys in memory, and _______ registers passphrase-protected private keys into the agent so users only enter their passphrase once.	Ssh-add
