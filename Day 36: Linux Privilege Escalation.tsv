@@ -1,0 +1,4 @@
+[Privilege Escalation Tools] What does the command `su` stand for?	"`su` stands for ""substitute user"" (or ""switch user"""
+[sudo Administration] Which system file defines authorization rules for elevated privileges with `sudo`?	The `/etc/sudoers` file; 
+[sudo Syntax] How do you configure a specific user or group in `/etc/sudoers` to run a specific command (e.g., `/usr/bin/apt update`) without prompting for a password?	Add the `NOPASSWD:` directive before the command path (e.g., `username ALL=(ALL:ALL) NOPASSWD: /usr/bin/apt update`).
+[PolicyKit/pkexec Configuration] Where are default system action definitions stored?	Default action definitions are in `/usr/share/polkit-1/actions/` 

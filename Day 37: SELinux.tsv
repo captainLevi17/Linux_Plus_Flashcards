@@ -1,0 +1,11 @@
+[SELinux Modes] What are the three operational modes of SELinux?	Enforcing (blocks policy violations and logs them), Permissive (logs policy violations without blocking traffic/access), and Disabled (SELinux kernel hooks completely turned off).
+[SELinux Mode Management] How do you temporarily switch the SELinux execution mode to permissive at runtime, and how do you check the current mode?	Run `setenforce 0` or `setenforce Permissive` to change modes.
+[SELinux Configuration] Which configuration file must be modified to permanently change the default SELinux mode or completely disable SELinux across system reboots?	`/etc/selinux/config`
+[SELinux Context Architecture] What are the four components of an SELinux security context label displayed by `ls -Z` (e.g., `unconfined_u:object_r:httpd_sys_content_t:s0`)?	User (`_u`), Role (`_r`), Type (`_t`), and Sensitivity/Level (`s0`).
+[SELinux Context Types] In standard enterprise SELinux targeted policy configurations, which context component is primary for enforcing Access Control rules on files and processes?	The Type component (`_t`, e.g., `httpd_sys_content_t`).
+[SELinux Context Utilities] Which command temporarily changes a file's SELinux context directly?	`chcon` (changes context explicitly)
+[SELinux Mass Relabeling] How can an administrator trigger an automatic full-filesystem SELinux relabeling upon the next system reboot?	Create an empty file named `.autorelabel` in the root directory (`sudo touch /.autorelabel`) and reboot.
+[SELinux Booleans] What command lists all SELinux boolean toggles?	List with `getsebool -a` or `semanage boolean -l`
+[SELinux] How do you check the current mode?	getenforce or sestatus
+[SELinux] Which command restores a file's context back to its system policy default?	`restorecon` (restores default context based on defined policy).
+[SELinun] How do you permanently enable a boolean (e.g., `httpd_enable_homedirs`) across reboots?	permanently enable using `setsebool -P <boolean> on` (or `setsebool -P <boolean> 1`).
