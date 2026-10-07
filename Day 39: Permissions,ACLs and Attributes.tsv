@@ -1,0 +1,9 @@
+[Standard Permissions] What three permission types form the foundation of POSIX file security in Linux?	Permission types: Read (`r`), Write (`w`), Execute (`x`).
+[Permission Management] How do you remove write access for a group and add read access for others on a file named `test` using `chmod`?	`chmod g-w,o+r test`
+[Access Control Lists] Which utility displays the full list of extended access control list entries for a file, including ACL permissions?	`getfacl`
+[Access Control Lists] What `setfacl` command syntax modifies a file named `test` to explicitly grant user `susie` read, write, and execute permissions?	`setfacl -m u:susie:rwx test`
+[File Attributes] What command lists the file attributes (such as the immutable flag) assigned to files in Linux?	`lsattr`
+[Standard Permissions] What three entity levels form the foundation of POSIX file security in Linux?	Entity levels: User/Owner (`u`), Group (`g`), Other (`o`)
+[Special Permissions] It executes the program with the privileges of the file’s owner rather than the user executing it	Set User ID (SUID)
+[Special Permissions]  On an executable, it runs the program with the owning group's privileges; on a directory, it causes new files created inside to automatically inherit the directory's owning group.	Set Group ID (SGID)
+[Special Permissions] It prevents users from deleting or renaming files owned by other users within that directory, even if they have write access to the directory.	Sticky bit

@@ -1,0 +1,10 @@
+[AppArmor Modes] What are the three primary operational modes for an AppArmor profile?	Enforce (blocks policy violations and logs them), Complain (logs violations without blocking execution), and Disable (turns off profile enforcement).
+[AppArmor Administration] Which command displays the current active status, loaded profiles, and process enforcement states for AppArmor?	`aa-status`
+[AppArmor Administration] What commands are used to temporarily toggle a profile between enforce mode and complain mode?	`aa-enforce <profile_or_path>` and `aa-complain <profile_or_path>`
+[AppArmor Administration] How do you temporarily disable a specific AppArmor profile?	`aa-disable <profile_or_path>`
+[AppArmor Service Management] How do you check if AppArmor is enabled?	Check status with `aa-enabled`
+[AppArmor Profile Overrides] Where are user override files stored for AppArmor profiles to prevent updates from overwriting local modifications?	`/etc/apparmor.d/local/`
+[AppArmor Interactive Utilities] Which utility inspects system audit logs to interactively prompt the administrator to allow or deny logged actions and update an AppArmor profile?	`aa-logprof`
+[AppArmor or SELinux?] enforces security policies based on individual application profiles bound to executable paths	AppArmor
+[AppArmor or SELinux?] enforces rules using security contexts attached to files, processes, and objects.	SELinux
+[AppArmor] How do you stop or start the AppArmor service?	manage the service with `sudo systemctl stop apparmor` or `sudo systemctl start apparmor`.

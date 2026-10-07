@@ -1,0 +1,9 @@
+[User Security] What sensitive user information is stored exclusively in the /etc/shadow file, and what are its access permissions?	Hashed account passwords and password aging/expiration parameters; it is readable only by the root user and members of the shadow group.
+[Account Management] Which command allows safe editing of the /etc/passwd file while performing syntax validation upon saving?	vipw
+[Account Management] Which command with flags allows safe editing of the /etc/shadow file with syntax verification?	vipw -s
+[Group Administration] Which commands are used to safely edit the /etc/group and /etc/gshadow files with syntax verification?	vigr (for /etc/group) and vigr -s (for /etc/gshadow).
+[User Provisioning] What is the purpose of the /etc/skel directory during new user creation?	It contains template files and directories (such as default dotfiles) that are automatically copied into a newly created user's home directory.
+"[Password Security] In output from chage -l, what does ""inactive"" password status mean during a grace period?"	The number of days after a password expires during which the user can still log in and change their password before the account is fully locked. (Grace period)
+[System Configuration] Which system configuration file sets default password aging parameter limits (e.g., PASS_MAX_DAYS, PASS_MIN_DAYS, PASS_WARN_AGE) for newly created users?	/etc/login.defs
+[Account Security] Which command is used by administrators to view or clear lockout counters for users locked out by pam_faillock?	faillock --user <username> --reset (or faillock --reset for all users).
+It tracks failed login attempts per user and temporarily locks out accounts after a configured threshold of consecutive authentication failures.	Faillock (pam_faillock module)

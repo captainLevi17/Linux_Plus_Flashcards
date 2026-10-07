@@ -1,0 +1,13 @@
+[User Management] Which command is used to display or view the default configuration settings used when creating a new user account?	useradd -D
+[User Management] How do you permanently change the default login shell for newly created users using the useradd command?	useradd -D -s <shell_path> (e.g., useradd -D -s /bin/bash)
+[User Management] Which option must be passed to the useradd command to ensure that the user's home directory is automatically created?	-m (or --create-home)
+[User Management] Which command is used to assign or update the password for a user account?	passwd <username>
+[User Management] Which options should be passed to userdel to forcefully remove a user account along with their home directory and mail spool?	userdel -r -f <username> (or userdel -rf <username>)
+[Group Management] Which command is used to create a new local user group?	groupadd <groupname>
+[Group Management] Which command is used to delete an existing local group?	groupdel <groupname>
+[Group Management] Which usermod flags must be combined with usermod to append a secondary (supplementary) group to a user without overwriting existing group memberships?	usermod -aG <groupname> <username>
+[User Management] What is the difference between the -g and -G options when using the usermod command?	-g modifies the user's primary group, while -G modifies the user's secondary (supplementary) group(s).
+[Group Management] Which command is used to modify existing group attributes, such as renaming a group or changing its GID?	groupmod
+[Account Administration] Which command displays user and group identity information (UID, GID, and supplementary groups) for a specified account?	id <username>
+"It displays currently logged-in users along with their system resource usage and current active processes/commands (""what"" they are doing)."	w
+It displays a list of currently logged-in users along with their login terminals (TTY/PTS), login times, and remote hostnames.	who

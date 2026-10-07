@@ -1,0 +1,6 @@
+[System Logging] Why is forwarding system logs to a centralized log management server considered a security best practice?	It prevents attackers who compromise a local host from modifying or deleting local log files to hide their activity.
+[File Permissions] If a user's umask is set to 0027, what default permissions are assigned to a newly created file?	rw-r----- (640 octal), meaning group has read-only access and others have no access.
+[Security Configuration] In Linux, which PAM configuration files typically enforce password complexity and minimum length requirements?	Files within /etc/pam.d/ (such as common-password or system-auth).
+[Host Security] Why should a local host-based firewall (e.g., ufw, firewalld, or nftables) be enabled on a server even if an enterprise network firewall is present?	It provides defense-in-depth, protecting the server against unauthorized internal network traffic, lateral movement, or compromised internal hosts.
+_______ verifies the digital signature of the bootloader and kernel against trusted keys before execution, preventing unauthorized or malicious code (like rootkits) from running at boot.	Secure Boot
+It determines the default permission bits to automatically strip/remove when new files or directories are created by a process.	umask
