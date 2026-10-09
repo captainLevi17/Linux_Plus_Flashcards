@@ -1,0 +1,8 @@
+[Bash Environment Variables]  How do you make locally assigned variables accessible to child processes?	use `export variable_name` to export the variable to subshells and child processes.
+[Bash Environment Variables] Can a child script or subshell modify or set an environment variable in its parent shell process?	No, process environment inheritance in Linux is unidirectional—parent processes pass variables to children, but child processes cannot modify the parent's environment.
+[Bash Shell Administration] Which command is used to remove or clear an assigned variable or function from the current shell environment?	`unset <variable_name>`
+[Bash Scripting] Which command in a Bash script pauses execution to take interactive user input from standard input and assign it to a variable?	`read <variable_name>`
+[Bash Conditionals] In Bash string comparison inside double brackets `[[ ]]`, what operator represents logical OR between multiple conditions?	`||`
+[Bash Conditionals] What is the syntax structure of a `case` statement in Bash, and how is it properly closed?	`case $variable in pattern1) <commands> ;; pattern2) <commands> ;; *) <default_commands> ;; esac` (closed with `esac`).
+[Bash Conditionals] In a Bash `case` statement pattern block, what character sequence is required to signify the end of a specific pattern's command execution?	A double semicolon (`;;`).
+[Bash Conditionals] In a Bash `case` statement, what symbol acts as a default catch-all wildcard pattern matching any unmatched input value?	The asterisk (`*`).
